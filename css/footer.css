@@ -1,0 +1,27 @@
+/* Footer con logos */
+.footer-logos {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .footer-logos h3 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .logos-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .logos-grid img {
+    max-width: 100px;
+    max-height: 50px;
+    object-fit: contain;
+  }

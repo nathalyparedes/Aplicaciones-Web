@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tenis de Mesa</title>
+  <!-- Google Icons & Fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/menu.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+
+</head>
+<body>
+
+  <!-- Checkbox para el menú lateral (toggle) -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+  <!-- Ícono de menú hamburguesa -->
+  <label for="menu-toggle" class="menu-btn">
+    <span class="material-icons menu-icon">menu</span>
+  </label>
+
+  <!-- Menú lateral -->
+  <nav class="menu-lateral">
+    <ul>
+      <!-- Ahora "Inicio" apunta a la sección de Introducción -->
+      <li><a href="#introduccion">Inicio</a></li>
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="#reglas">Reglas</a></li>
+      <li><a href="#equipamiento">Equipamiento</a></li>
+      <li><a href="#tecnicas">Técnicas</a></li>
+      <li><a href="#jugadores">Jugadores</a></li>
+      <li><a href="#curiosidades">Curiosidades</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header principal (Hero) -->
+  <header id="hero" class="main-header">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Descubre el mundo del tenis de mesa</h1>
+      <p>Bienvenido</p>
+    </div>
+  </header>
+
+
+  <!-- Contenido principal -->
+  <div class="contenido">   
+
+    <section id="introduccion" class="info-section">
+        <h2>Introducción al Tenis de Mesa</h2>
+        <div class="intro-content">
+          <img src="./assets/images/introduction/image.jpg" alt="Tenis de Mesa" class="intro-image">
+          <div class="intro-text">
+            <p>
+              El tenis de mesa es mucho más que un deporte; es una pasión que combina velocidad, precisión y estrategia. Con raíces que se remontan a finales del siglo XIX, este dinámico juego se ha convertido en una disciplina olímpica, conquistando a millones de aficionados alrededor del mundo.
+            </p>
+            <p>
+              Cada partido es una emocionante batalla en la que la coordinación, el reflejo y la táctica juegan un papel fundamental. Ya sea en competiciones de alto nivel o en encuentros recreativos, el tenis de mesa desafía tus habilidades físicas y mentales, permitiéndote mejorar tu concentración y rapidez de reacción.
+            </p>
+            <p>
+              Lo mejor del tenis de mesa es su accesibilidad: es un deporte ideal para todas las edades y niveles de experiencia. Desde jóvenes talentos hasta adultos en busca de una actividad divertida y saludable, el tenis de mesa fomenta la socialización y el bienestar.
+            </p>
+          </div>
+        </div>
+
+        <h2> </h2>
+        <div class="info-grid">
+          <div class="info-box">
+            <img src="./assets/images/facts/ttalzheimer.jpg" alt="Curiosidades del Tenis de Mesa">
+            <h3>Curiosidades</h3>
+            <p>Descubre datos sorprendentes sobre este deporte, desde récords impresionantes hasta hechos poco conocidos.</p>
+            <a href="#curiosidades" class="btn-leer-mas">Leer más</a>
+        </div>
+          <div class="info-box">
+            <img src="./assets/images/history/ttb&w.jpg" alt="Historia del Tenis de Mesa">
+            <h3>Historia</h3>
+            <p>Desde sus orígenes en el siglo XIX hasta convertirse en un deporte olímpico, el tenis de mesa ha evolucionado constantemente.</p>
+            <a href="#historia" class="btn-leer-mas">Leer más</a>
+        </div>
+          <div class="info-box">
+            <img src="./assets/images/players/liu-shiwen-1430481785-2421810185.jpg" alt="Jugadores destacados">
+            <h3>Jugadores</h3>
+            <p>Conoce a las leyendas del tenis de mesa que han marcado la historia con su talento y logros.</p>
+            <a href="#jugadores" class="btn-leer-mas">Leer más</a>
+          </div>
+        </div>
+
+      </section>
+
+      
+    <!-- Resto del contenido... -->
+
+    <section id="reglas" class="info-section">
+      <h2>Reglas Básicas del Tenis de Mesa</h2>
+      <p class="intro">El tenis de mesa, o ping-pong, es un deporte rápido y emocionante. Conoce las reglas fundamentales para disfrutar de un juego justo y divertido:</p>
+      
+      <div class="reglas-container">
+        <div class="regla-item">
+          <h3>1. Inicio del Juego</h3>
+          <ul>
+            <li>Se decide quién saca mediante un sorteo.</li>
+            <li>El saque se realiza desde detrás de la línea de fondo.</li>
+            <li>La pelota debe botar en el lado del jugador que saca y luego en el del oponente.</li>
+          </ul>
+        </div>
+        
+        <div class="regla-item">
+          <h3>2. Puntuación</h3>
+          <ul>
+            <li>Se juega a 11 puntos por set.</li>
+            <li>Se debe ganar por una diferencia de 2 puntos.</li>
+            <li>Los partidos se juegan al mejor de 3, 5 o 7 sets.</li>
+          </ul>
+        </div>
+        
+        <div class="regla-item">
+          <h3>3. Reglas del Saque</h3>
+          <ul>
+            <li>El saque debe lanzarse lo más verticalmente posible, a una altura no mínima a 16cm y de manera que la pelota bote en el lado propio antes de cruzar la red.</li>
+            <li>Si la pelota toca la red y cae correctamente, se repite el saque.</li>
+            <li>Cada jugador debe sacar dos veces antes de hacer el cambio. Cuando se llega al 10-10, cada jugador tiene un saque.</li>
+          </ul>
+        </div>
+        
+        <div class="regla-item">
+          <h3>4. Pelota y Raqueta</h3>
+          <ul>
+            <li>La pelota es de 40 mm de diámetro y, desde 2014, se fabrica en plástico.</li>
+            <li>Las raquetas son de madera con una capa de goma para mejorar el control y el efecto.</li>
+          </ul>
+        </div>
+        
+        <div class="regla-item">
+          <h3>5. Intercambio de Golpes</h3>
+          <ul>
+            <li>La pelota debe ser golpeada antes de que bote dos veces en el mismo lado.</li>
+            <li>La pelota puede pasar al otro lado por encima, por un lado o por abajo de la red.</li>
+            <li>El punto se pierde si no se devuelve la pelota correctamente.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="more-info">Para mayor información, verifica el reglamento oficial en <a href="https://documents.ittf.sport/sites/default/files/public/2024-02/2024_ITTF_Statutes_clean_version.pdf" target="_blank">Reglamento Oficial del Tenis de Mesa</a>.</p>
+    </section>
+
+    
+    <section id="equipamiento">
+      <h2>Equipamiento de Tenis de Mesa</h2>
+      <div class="equipamiento-list">
+        <div class="item">
+          <h3>Raquetas</h3>
+          <p>Las raquetas son esenciales para el rendimiento en el juego. Están disponibles en diferentes materiales y diseños según el nivel de juego.</p>
+          <ul>
+          </ul>
+          <img src="./assets/images/equipement/raquet.jpg" class="fact-image">
+        </div>
+        <div class="item">
+          <h3>Pelotas</h3>
+          <p>Las pelotas de tenis de mesa son ligeras y de 40mm de diámetro. Las de competición tienen 3 estrellas, mientras que las de entrenamiento suelen tener una estrella.</p>
+          <img src="./assets/images/equipement/ball.jpg" class="fact-image">
+        </div>
+        <div class="item">
+          <h3>Mesas</h3>
+          <p>Las mesas oficiales deben cumplir con especificaciones de la ITTF. Las mesas de entrenamiento son más accesibles y variadas en tamaño y calidad.</p>
+          <img src="./assets/images/equipement/table.jpg" class="fact-image">
+        </div>
+        <div class="item">
+          <h3>Redes y postes</h3>
+          <p>Las redes deben ser de 15,25 cm de altura, y los postes que sostienen la red deben estar fijados a los extremos de la mesa.</p>
+          <img src="./assets/images/equipement/net.jpg" class="fact-image">
+        </div>
+        <div class="item">
+          <h3>Marcadores</h3>
+          <p>Los sistemas de marcadores se utilizan para llevar la cuenta de los puntos durante los partidos.</p>
+          <img src="./assets/images/equipement/score-board.jpg" class="fact-image">
+        </div>
+        <div class="item">
+          <h3>Zapatillas</h3>
+          <p>Las zapatillas para tenis de mesa tienen una suela antideslizante y ofrecen soporte adecuado para los movimientos rápidos y constantes en la cancha.</p>
+          <img src="./assets/images/equipement/shoe.jpeg" class="fact-image">
+        </div>
+        <div class="item">
+          <h3>Accesorios</h3>
+          <p>Los accesorios adicionales como fundas para las raquetas, toallas y bolsas de deporte son fundamentales para mantener todo el equipo en buen estado.</p>
+          <img src="./assets/images/equipement/accesories.png" class="fact-image">
+        </div>
+        <div class="item">
+          <h3>Ropa</h3>
+          <p>La ropa diseñada para tenis de mesa es ligera y transpirable, permitiendo el máximo confort y movilidad.</p>
+          <img src="./assets/images/equipement/clothes.jpg" class="fact-image">
+        </div>
+      </div>
+    </section>
+    
+    <section id="tecnicas">
+      <h2>Técnicas de Tenis de Mesa</h2>
+      <div class="tecnicas-list">
+        <div class="item">
+          <h3>Revés y Drive</h3>
+          <p>El revés y el drive son dos de los golpes más básicos pero fundamentales. El drive se utiliza para un golpe rápido y recto, mientras que el revés es ideal para cambiar la dirección del juego.</p>
+        </div>
+        <div class="item">
+          <h3>Topspin</h3>
+          <p>El topspin es un golpe que genera un giro hacia adelante en la pelota, lo que le da más control y profundidad. Es esencial para mantener el ritmo del juego a tu favor.</p>
+        </div>
+        <div class="item">
+          <h3>Bloqueo</h3>
+          <p>El bloqueo es una técnica defensiva que te permite neutralizar los golpes rápidos del oponente. Se usa principalmente cuando el oponente tiene un ataque fuerte y necesitas contrarrestarlo con precisión.</p>
+        </div>
+        <div class="item">
+          <h3>Saque</h3>
+          <p>El saque es uno de los momentos más importantes del tenis de mesa. Un saque bien ejecutado puede poner al oponente en una posición incómoda desde el inicio del punto.</p>
+        </div>
+        <div class="item">
+          <h3>Flick</h3>
+          <p>El flick es un golpe avanzado que se utiliza para devolver pelotas cortas o bajas. Permite un golpe rápido y preciso, ideal para situaciones de juego más intensas.</p>
+        </div>
+        <div class="item">
+          <h3>Variaciones de Spin</h3>
+          <p>El spin es una técnica crucial en el tenis de mesa. Puedes aplicar backspin, sidespin y topspin dependiendo de la estrategia que desees ejecutar.</p>
+        </div>
+      </div>
+    
+      <!-- Video de YouTube -->
+      <div class="video-container">
+        <h3>Aprende más sobre las Técnicas de Tenis de Mesa</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL8G9_JOD5NB0XyCH_S09I4zFGtuqhWRty" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    
+    <section id="jugadores" class="table-tennis-facts">
+      <h2>Jugadores Destacados</h2>
+      <div class="facts-grid">
+        <div class="fact-item">
+          <img src="./assets/images/players/jowaldner.jpg" alt="Jan-Ove Waldner" class="fact-image">
+          <h3>Jan-Ove Waldner</h3>
+          <p>Apodado "El Mozart del tenis de mesa", campeón olímpico en 1992 y múltiple campeón mundial. Reconocido por su elegancia y destreza.</p>
+        </div>
+        <div class="fact-item">
+          <img src="./assets/images/players/Kong-Linghui.jpg" alt="Kong Linghui" class="fact-image">
+          <h3>Kong Linghui</h3>
+          <p>Oro olímpico en 1996 y campeón mundial, destacado por su habilidad técnica y juego inteligente.</p>
+        </div>
+        <div class="fact-item">
+          <img src="./assets/images/players/Liu-Guoliang-2950428760.jpg" alt="Liu Guoliang" class="fact-image">
+          <h3>Liu Guoliang</h3>
+          <p>Campeón olímpico en 1996, considerado una de las figuras clave del tenis de mesa chino.</p>
+        </div>
+        <div class="fact-item">
+          <img src="./assets/images/players/deng-yaping.jpg" alt="Deng Yaping" class="fact-image">
+          <h3>Deng Yaping</h3>
+          <p>4 medallas olímpicas y varios títulos mundiales, una de las jugadoras más dominantes de la historia.</p>
+        </div>
+        <div class="fact-item">
+          <img src="./assets/images/players/Zhang+Yining-4-3115365668.jpg" alt="Zhang Yining" class="fact-image">
+          <h3>Zhang Yining</h3>
+          <p>4 títulos olímpicos y múltiples títulos mundiales, considerada una de las jugadoras más exitosas de la historia.</p>
+        </div>
+        <div class="fact-item">
+          <img src="./assets/images/players/Wang+Hao+1-1774548817.jpg" alt="Wang Hao" class="fact-image">
+          <h3>Wang Hao</h3>
+          <p>2 medallas olímpicas y campeón mundial, conocido por su gran técnica y habilidades tácticas.</p>
+        </div>
+        <div class="fact-item">
+          <img src="./assets/images/players/zhang-jike.jpg" alt="Zhang Jike" class="fact-image">
+          <h3>Zhang Jike</h3>
+          <p>2 títulos olímpicos (2012, 2016) y 3 títulos mundiales, reconocido por su estilo agresivo y explosivo.</p>
+        </div>
+        <div class="fact-item">
+          <img src="./assets/images/players/ma-long.jpg" alt="Ma Long" class="fact-image">
+          <h3>Ma Long</h3>
+          <p>3 títulos olímpicos en individuales (2016, 2020) y múltiples títulos mundiales, considerado el mejor jugador de todos los tiempos.</p>
+        </div>
+        <div class="fact-item">
+          <img src="./assets/images/players/timo-boll.jpg" alt="Timo Boll" class="fact-image">
+          <h3>Timo Boll</h3>
+          <p>Líder europeo con múltiples títulos europeos y medallas en Mundiales, gran referente fuera de China.</p>
+        </div>
+        <div class="fact-item">
+          <img src="./assets/images/players/xu-xin.jpg" alt="Xu Xin" class="fact-image">
+          <h3>Xu Xin</h3>
+          <p>Dominante en el circuito mundial, con múltiples títulos de Copa del Mundo y mundial por equipos.</p>
+        </div>
+        <div class="fact-item">
+          <img src="./assets/images/players/liu-shiwen-1430481785-2421810185.jpg" alt="Liu Shiwen" class="fact-image">
+          <h3>Liu Shiwen</h3>
+          <p>Una de las mejores jugadoras femeninas con varios títulos mundiales y liderando el tenis de mesa femenino.</p>
+        </div>
+        <div class="fact-item">
+          <img src="./assets/images/players/cheng-meng.jpg" alt="Chen Meng" class="fact-image">
+          <h3>Chen Meng</h3>
+          <p>Considerada una de las mejores jugadoras de la era moderna, ganadora de varios campeonatos mundiales.</p>
+        </div>
+        <div class="fact-item">
+          <img src="./assets/images/players/ding-ning.jpg" alt="Ding Ning" class="fact-image">
+          <h3>Ding Ning</h3>
+          <p>2 títulos olímpicos (2012, 2016) y campeona mundial en varias ocasiones, destacada por su consistencia.</p>
+        </div>
+        <div class="fact-item">
+          <img src="./assets/images/players/ito-mima.jpg" alt="Mima Ito" class="fact-image">
+          <h3>Mima Ito</h3>
+          <p>Una de las jugadoras más jóvenes en llegar a lo más alto, con títulos mundiales y medallas olímpicas.</p>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="historia" class="info-section">
+      <h2>Historia del Tenis de Mesa</h2>
+      <div class="timeline">
+    
+        <div class="timeline-item">
+          <div class="timeline-date">Siglo XIX</div>
+          <div class="timeline-content">
+            <h3>Orígenes en Inglaterra</h3>
+            <p>
+              Nació en Inglaterra como una variante del tenis, jugado en interiores por la aristocracia británica. Inicialmente, se usaban objetos domésticos como paletas y redes.            </p>
+          </div>
+        </div>
+    
+        <div class="timeline-item">
+          <div class="timeline-date">1890</div>
+          <div class="timeline-content">
+            <h3>Primeros intentos de comercialización</h3>
+            <p>
+              David Foster patentó el primer juego de tenis de mesa, pero no tuvo éxito debido a las pelotas de goma.</p>
+          </div>
+        </div>
+    
+        <div class="timeline-item">
+          <div class="timeline-date">1901</div>
+          <div class="timeline-content">
+            <h3>Popularización y registro del nombre "Ping-Pong"</h3>
+            <p>
+              Se popularizó con la fabricación de equipamiento especializado. La empresa J. Jaques & Son Ltd. registró el nombre "Ping-Pong". El deporte se expandió a Europa y Asia.            </p>
+          </div>
+        </div>
+    
+        <div class="timeline-item">
+          <div class="timeline-date">1926</div>
+          <div class="timeline-content">
+            <h3>Fundación de la ITTF y primer Campeonato Mundial</h3>
+            <p>
+              Se fundó la ITTF y se establecieron reglas oficiales. Se celebró el primer Campeonato Mundial en Londres.</p>
+          </div>
+        </div>
+    
+        <div class="timeline-item">
+          <div class="timeline-date">1930-1950</div>
+          <div class="timeline-content">
+            <h3>Innovaciones en el deporte</h3>
+            <p>
+              Se introdujeron técnicas de giro y raquetas con goma y esponja. Hungría dominó el deporte con jugadores como Viktor Barna.            </p>
+          </div>
+        </div>
+    
+        <div class="timeline-item">
+          <div class="timeline-date">1959</div>
+          <div class="timeline-content">
+            <h3>Primer dominio asiático</h3>
+            <p>
+              China comenzó su dominio con la victoria de Rong Guotuan. Japón destacó en los 60 con Ichiro Ogimura.</p>
+          </div>
+        </div>
+    
+        <div class="timeline-item">
+          <div class="timeline-date">1971</div>
+          <div class="timeline-content">
+            <h3>Diplomacia del "Ping-Pong"</h3>
+            <p>
+              El tenis de mesa tuvo un papel clave en la diplomacia entre EE.UU. y China durante la Guerra Fría, cuando el equipo estadounidense fue invitado a China para una serie de partidos amistosos.            </p>
+          </div>
+        </div>
+    
+        <div class="timeline-item">
+          <div class="timeline-date">1988</div>
+          <div class="timeline-content">
+            <h3>Primera aparición en los Juegos Olímpicos</h3>
+            <p>
+              Debutó en los Juegos Olímpicos de Seúl como deporte de exhibición. </p>
+          </div>
+        </div>
+    
+        <div class="timeline-item">
+          <div class="timeline-date">1992</div>
+          <div class="timeline-content">
+            <h3>Oficialización como deporte olímpico</h3>
+            <p>
+              Se oficializó como deporte olímpico en Barcelona, con categorías individuales y dobles.</p>
+          </div>
+        </div>
+    
+        <div class="timeline-item">
+          <div class="timeline-date">2000</div>
+          <div class="timeline-content">
+            <h3>Cambios en las reglas y tamaño de la pelota</h3>
+            <p>
+              Para hacer el juego más dinámico, la ITTF aumentó la pelota a 40 mm, redujo los sets a 11 puntos y prohibió el saque escondido.            </p>
+          </div>
+        </div>
+    
+        <div class="timeline-item">
+          <div class="timeline-date">2014</div>
+          <div class="timeline-content">
+            <h3>Cambio de pelotas de celuloide a plástico</h3>
+            <p>
+              Se cambiaron las pelotas de celuloide por plástico, afectando la velocidad y el bote del juego.</p>
+          </div>
+        </div>
+    
+        <div class="timeline-item">
+          <div class="timeline-date">2020</div>
+          <div class="timeline-content">
+            <h3>Creación de la World Table Tennis (WTT)</h3>
+            <p>
+              La World Table Tennis (WTT) fue lanzada por la ITTF para modernizar y dar mayor visibilidad al deporte. La WTT organiza los principales torneos internacionales y tiene como meta hacer el deporte más profesional y emocionante.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2021</div>
+          <div class="timeline-content">
+            <h3>Debut del dobles mixto en Tokio 2020</h3>
+            <p>
+              Se agregó el dobles mixto como nueva categoría olímpica, con Japón ganando el oro y rompiendo la hegemonía china en esta modalidad.
+            </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2023</div>
+          <div class="timeline-content">
+            <h3>Digitalización y Expansión Global</h3>
+            <p>
+              La ITTF y la WTT han promovido la digitalización del tenis de mesa, mejorando las transmisiones en vivo y utilizando tecnología avanzada para optimizar el arbitraje y el análisis del rendimiento de los jugadores, expandiendo así su audiencia global.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+  
+      <section class="table-tennis-facts" id="curiosidades">
+        <h2>Curiosidades sobre el Tenis de Mesa</h2>
+        <div class="facts-grid">
+          <div class="fact-item">
+            <h3>Origen del tenis de mesa</h3>
+            <p>El tenis de mesa, también conocido como ping-pong, se originó en Inglaterra a finales del siglo XIX como una versión en miniatura del tenis.</p>
+            <img src="./assets/images/facts/origin.jpg" class="fact-image"/>
+          </div>
+          <div class="fact-item">
+            <h3>Primeras pelotas</h3>
+            <p>Las primeras pelotas eran hechas de corcho o madera, pero rápidamente se cambió a celuloide debido a su ligereza y resistencia. Actualmente son de plástico</p>
+            <img src="./assets/images/facts/balls.jpg" class="fact-image"/>
+          </div>
+          <div class="fact-item">
+            <h3>Juego olímpico</h3>
+            <p>El tenis de mesa hizo su primera aparición en los Juegos de Seúl en 1988,como deporte de exhibición. En Barcelona 1992 se convirtió en deporte olímpico</p>
+            <img src="./assets/images/facts/olympics.jpg" class="fact-image"/>
+          </div>
+          <div class="fact-item">
+            <h3>El ping-pong como nombre</h3>
+            <p>El término "ping-pong" proviene del sonido que hace la pelota ('ping' cuando la pelota golpea la superficie y 'pong' al rebotar) y es una marca registrada en algunos países.</p>
+            <img src="./assets/images/facts/pingpong.jpg" class="fact-image"/>
+          </div>
+          <div class="fact-item">
+            <h3>La mayor victoria</h3>
+            <p>El partido más largo de tenis de mesa registrado duró 8 horas y 40 minutos en 2016, en un torneo en Alemania.</p>
+            <img src="./assets/images/facts/points.jpg" class="fact-image"/>
+          </div>
+          <div class="fact-item">
+            <h3>El dominio chino</h3>
+            <p>China es la nación más dominante, ganando más del 60% de las medallas en campeonatos mundiales y olímpicos.</p>
+            <img src="./assets/images/facts/china.jpg" class="fact-image"/>
+          </div>
+          <div class="fact-item">
+            <h3>El tamaño de la mesa</h3>
+            <p>Una mesa de tenis de mesa oficial mide 2.74 metros de largo, 1.525 metros de ancho y 76 cm de altura.</p>
+            <img src="./assets/images/facts/table.jpg" class="fact-image"/>
+          </div>
+          <div class="fact-item">
+            <h3>El spin en el juego</h3>
+            <p>El "spin" es un tipo de efecto que los jugadores le dan a la pelota, haciendo que cambie su trayectoria de forma impredecible.</p>
+            <img src="./assets/images/facts/spin.png" class="fact-image"/>
+          </div>
+          <div class="fact-item">
+            <h3>El tenis de mesa en China</h3>
+            <p>El tenis de mesa es considerado el deporte nacional en China, donde es una pasión que abarca todas las edades, desde los niños en las escuelas hasta los profesionales.</p>
+            <img src="./assets/images/facts/sportchina.jpg" class="fact-image"/>
+          </div>
+          <div class="fact-item">
+            <h3>La concentración</h3>
+            <p>El tenis de mesa es conocido por su rapidez y requiere una gran concentración y reflejos debido a la velocidad de la pelota (aprox. 70 a 80 km/h).</p>
+            <img src="./assets/images/facts/rallie" class="fact-image"/>
+          </div>
+          <div class="fact-item">
+            <h3>Ejercicio para el cerebro</h3>
+            <p>Se ha demostrado que el tenis de mesa tiene beneficios para el cerebro, especialmente en la prevención y tratamiento de enfermedades como el Alzheimer.</p>
+            <img src="./assets/images/facts/ttalzheimer.jpg" class="fact-image"/>
+        </div>
+          <div class="fact-item">
+            <h3>Deporte para discapacitados</h3>
+            <p>El tenis de mesa es un deporte accesible para personas con discapacidades, y es uno de los deportes más practicados en los Juegos Paralímpicos.</p>
+            <img src="./assets/images/facts/para.jpg" class="fact-image"/>
+          </div>
+        </div>      
+    </section>
+
+  </div><!-- Fin .contenido -->
+
+  <footer class="footer-logos">
+    <h3>Para mayor información</h3>
+    <div class="logos-grid">
+      <a href="https://worldtabletennis.com/" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/images/footer/wtt.jpg" alt="Logo 1">
+      </a>
+      <a href="https://www.ittf.com/" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/images/footer/ittf.jpg" alt="Logo 2">
+      </a>
+    </div>
+    <p>© 2025 Nathaly Paredes - Todos los derechos reservados</p>
+  </footer>
+  
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+/* Estilo del ícono de menú hamburguesa */
+.menu-btn {
+    font-size: 30px;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #333;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    border-radius: 5px;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+  }
+  
+  .menu-btn .material-icons {
+    color: white;
+    font-size: 36px;
+  }
+  
+  /* Menú lateral */
+  .menu-lateral {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+  }
+  
+  .menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu-lateral ul li {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .menu-lateral ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    display: block;
+    padding: 10px;
+  }
+  
+  .menu-lateral ul li:hover {
+    background-color: #e63946; 
+    border-radius: 5px;
+  }
+  
+  /* Checkbox para el menú */
+  .menu-toggle {
+    display: none;
+  }
+  
+  /* Efecto cuando el checkbox está marcado (menú abierto) */
+  .menu-toggle:checked + .menu-btn + .menu-lateral {
+    left: 0;
+  }
