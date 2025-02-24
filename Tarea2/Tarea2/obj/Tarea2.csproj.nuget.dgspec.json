@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Applications/MAMP/htdocs/Aplicaciones Web/Tarea2/Tarea2/Tarea2.csproj": {}
+    "/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea2/Tarea2/Tarea2.csproj": {}
   },
   "projects": {
-    "/Applications/MAMP/htdocs/Aplicaciones Web/Tarea2/Tarea2/Tarea2.csproj": {
+    "/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea2/Tarea2/Tarea2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Applications/MAMP/htdocs/Aplicaciones Web/Tarea2/Tarea2/Tarea2.csproj",
+        "projectUniqueName": "/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea2/Tarea2/Tarea2.csproj",
         "projectName": "Tarea2",
-        "projectPath": "/Applications/MAMP/htdocs/Aplicaciones Web/Tarea2/Tarea2/Tarea2.csproj",
+        "projectPath": "/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea2/Tarea2/Tarea2.csproj",
         "packagesPath": "/Users/nathalyparedes/.nuget/packages/",
-        "outputPath": "/Applications/MAMP/htdocs/Aplicaciones Web/Tarea2/Tarea2/obj/",
+        "outputPath": "/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea2/Tarea2/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/nathalyparedes/.nuget/NuGet/NuGet.Config"

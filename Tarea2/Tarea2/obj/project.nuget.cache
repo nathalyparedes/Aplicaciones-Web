@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LpXa2h8boFA=",
+  "dgSpecHash": "Ve70WzRecX4=",
   "success": true,
-  "projectFilePath": "/Applications/MAMP/htdocs/Aplicaciones Web/Tarea2/Tarea2/Tarea2.csproj",
+  "projectFilePath": "/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea2/Tarea2/Tarea2.csproj",
   "expectedPackageFiles": [
     "/Users/nathalyparedes/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/nathalyparedes/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",

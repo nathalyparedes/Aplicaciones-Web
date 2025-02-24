@@ -7,8 +7,9 @@ namespace Tarea2.Models
      public int Id { get; set; }
 
     [Required(ErrorMessage = "Por favor, ingrese la cédula o RUC.")]
-    [StringLength(13, MinimumLength = 10, ErrorMessage = "La cédula o RUC debe tener entre 10 y 13 caracteres.")]
+    [RegularExpression(@"^(?:\d{10}|\d{13})$", ErrorMessage = "La cédula debe tener 10 dígitos o el RUC 13 dígitos.")]
     public string Cedula_RUC { get; set; }
+
 
     [Required(ErrorMessage = "El nombre es necesario.")]
     [StringLength(50, ErrorMessage = "El nombre no puede tener más de 50 caracteres.")]
