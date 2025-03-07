@@ -29,18 +29,23 @@ ViewData["Title"] = "Create";
             </div>
             <div class="form-group">
                 <label asp-for="FechaInicio" class="control-label"></label>
-                <input asp-for="FechaInicio" class="form-control" />
+                <input asp-for="FechaInicio" class="form-control" type="date"/>
                 <span asp-validation-for="FechaInicio" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="FechaExpiracion" class="control-label"></label>
-                <input asp-for="FechaExpiracion" class="form-control" />
+                <input asp-for="FechaExpiracion" class="form-control" type="date"/>
                 <span asp-validation-for="FechaExpiracion" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Estado" class="control-label"></label>
-                <input asp-for="Estado" class="form-control" />
-                <span asp-validation-for="Estado" class="text-danger"></span>
+                <select asp-for="Estado" class="form-control">
+                        <optgroup label="Estado">
+                            <option value="Activa">Activa</option>
+                            <option value="Inactiva">Inactiva</option>
+                            <option value="Vencida">Vencida</option>
+                        </optgroup>
+                    </select>                <span asp-validation-for="Estado" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

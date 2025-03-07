@@ -7,5 +7,11 @@
       flex: 1 1 100%;
       text-align: center;
     }
+    .features-grid {
+      flex-direction: column;
+    }
+    .testimonios-grid {
+      flex-direction: column;
+    }
     
   }
