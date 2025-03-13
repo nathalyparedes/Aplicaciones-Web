@@ -7,9 +7,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Tarea4.Data;
 using Tarea4.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace Tarea4.Controllers
 {
+     [Authorize]
     public class HabitacionController : Controller
     {
         private readonly ApplicationDbContext _context;
