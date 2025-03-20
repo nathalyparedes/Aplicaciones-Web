@@ -18,7 +18,7 @@
         // Cargar la lista de productos
         $.get("../../Producto/ListaProductos", (ListaProductos) => {
             let html = "";
-            $.each(ListaProductos, (index, producto) => { // Cambiado a ListaProductos
+            $.each(ListaProductos, (index, producto) => { 
                 html += `
                     <tr>
                         <td>${index + 1}</td>
@@ -26,9 +26,9 @@
                         <td>${producto.presentacion}</td>
                         <td>${producto.codigoBarras}</td>
                         <td>
-                            <a class="btn btn-outline-warning" href="/Productos/Edit/${producto.id}">Edit</a> |
-                            <a class="btn btn-outline-info" href="/Productos/Details/${producto.id}">Details</a> |
-                            <a class="btn btn-outline-danger" href="/Productos/Delete/${producto.id}">Delete</a>
+                            <a class="btn btn-outline-warning" href="/Producto/Edit/${producto.id}">Edit</a> |
+                            <a class="btn btn-outline-info" href="/Producto/Details/${producto.id}">Details</a> |
+                            <a class="btn btn-outline-danger" href="/Producto/Delete/${producto.id}">Delete</a>
                         </td>
                     </tr>
                 `;
@@ -37,31 +37,6 @@
             $("#tablaProductos tbody").html(html);
         }).fail(() => {
             console.error("Error al cargar la lista de productos.");
-        });
-
-        // Cargar los detalles de la factura
-        $.get("../../detallefactura/TablaFactura", (listadetalleFactura) => {
-            let htmlFactura = "";
-            $.each(listadetalleFactura, (index, valor) => {
-                htmlFactura += `
-                    <tr>
-                        <td>${index + 1}</td>
-                        <td>${valor.Cantidad}</td>
-                        <td>${valor.Nombre_Producto}</td>
-                        <td>${valor.Precio}</td>
-                        <td>${valor.Total}</td>
-                        <td>
-                            <a class="btn btn-outline-warning" href="/DetalleFactura/Edit/${valor.Id}">Edit</a> |
-                            <a class="btn btn-outline-info" href="/DetalleFactura/Details/${valor.Id}">Details</a> |
-                            <a class="btn btn-outline-danger" href="/DetalleFactura/Delete/${valor.Id}">Delete</a>
-                        </td>
-                    </tr>
-                `;
-            });
-            // Insertar los datos de la factura en la tabla
-            $("#tablaFactura tbody").html(htmlFactura);
-        }).fail(() => {
-            console.error("Error al cargar los detalles de la factura.");
         });
     });
 </script>
@@ -78,7 +53,6 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Las filas se insertarán dinámicamente aquí -->
             </tbody>
         </table>
 

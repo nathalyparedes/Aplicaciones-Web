@@ -10,38 +10,23 @@ using Tarea5.Models;
 
 namespace Tarea5.Controllers
 {
-    public class ClientesController : Controller
+    public class StockController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public ClientesController(ApplicationDbContext context)
+        public StockController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Clientes
+        // GET: Stock
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Clientes.ToListAsync());
+            var applicationDbContext = _context.Stocks.Include(s => s.ProductoModel).Include(s => s.ProveedoresModel);
+            return View(await applicationDbContext.ToListAsync());
         }
 
-        public JsonResult ListaClientes()
-        {
-            var clientes = _context.Clientes
-                                    .Select(p => new ClientesModel
-                                    {
-                                        Id = p.Id,
-                                        Nombre = p.Nombre,
-                                        Direccion = p.Direccion,
-                                        Telefono = p.Telefono,
-                                        Email = p.Email
-                                    })
-                                    .ToList();
-
-            return Json(clientes);
-        }
-
-        // GET: Clientes/Details/5
+        // GET: Stock/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -49,39 +34,45 @@ namespace Tarea5.Controllers
                 return NotFound();
             }
 
-            var clientesModel = await _context.Clientes
+            var stockModel = await _context.Stocks
+                .Include(s => s.ProductoModel)
+                .Include(s => s.ProveedoresModel)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (clientesModel == null)
+            if (stockModel == null)
             {
                 return NotFound();
             }
 
-            return View(clientesModel);
+            return View(stockModel);
         }
 
-        // GET: Clientes/Create
+        // GET: Stock/Create
         public IActionResult Create()
         {
+            ViewData["ProductoModelId"] = new SelectList(_context.Productos, "Id", "NombreProducto");
+            ViewData["ProveedoresModelId"] = new SelectList(_context.Proveedores, "Id", "Correo");
             return View();
         }
 
-        // POST: Clientes/Create
+        // POST: Stock/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nombre,Direccion,Telefono,Email")] ClientesModel clientesModel)
+        public async Task<IActionResult> Create([Bind("Id,Cantidad,FechaFabricacion,FechaCaducidad,FechaRegistro,ProductoModelId,ProveedoresModelId")] StockModel stockModel)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(clientesModel);
+                _context.Add(stockModel);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(clientesModel);
+            ViewData["ProductoModelId"] = new SelectList(_context.Productos, "Id", "NombreProducto", stockModel.ProductoModelId);
+            ViewData["ProveedoresModelId"] = new SelectList(_context.Proveedores, "Id", "Correo", stockModel.ProveedoresModelId);
+            return View(stockModel);
         }
 
-        // GET: Clientes/Edit/5
+        // GET: Stock/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -89,22 +80,24 @@ namespace Tarea5.Controllers
                 return NotFound();
             }
 
-            var clientesModel = await _context.Clientes.FindAsync(id);
-            if (clientesModel == null)
+            var stockModel = await _context.Stocks.FindAsync(id);
+            if (stockModel == null)
             {
                 return NotFound();
             }
-            return View(clientesModel);
+            ViewData["ProductoModelId"] = new SelectList(_context.Productos, "Id", "NombreProducto", stockModel.ProductoModelId);
+            ViewData["ProveedoresModelId"] = new SelectList(_context.Proveedores, "Id", "Correo", stockModel.ProveedoresModelId);
+            return View(stockModel);
         }
 
-        // POST: Clientes/Edit/5
+        // POST: Stock/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Direccion,Telefono,Email")] ClientesModel clientesModel)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Cantidad,FechaFabricacion,FechaCaducidad,FechaRegistro,ProductoModelId,ProveedoresModelId")] StockModel stockModel)
         {
-            if (id != clientesModel.Id)
+            if (id != stockModel.Id)
             {
                 return NotFound();
             }
@@ -113,12 +106,12 @@ namespace Tarea5.Controllers
             {
                 try
                 {
-                    _context.Update(clientesModel);
+                    _context.Update(stockModel);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ClientesModelExists(clientesModel.Id))
+                    if (!StockModelExists(stockModel.Id))
                     {
                         return NotFound();
                     }
@@ -129,10 +122,12 @@ namespace Tarea5.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(clientesModel);
+            ViewData["ProductoModelId"] = new SelectList(_context.Productos, "Id", "NombreProducto", stockModel.ProductoModelId);
+            ViewData["ProveedoresModelId"] = new SelectList(_context.Proveedores, "Id", "Correo", stockModel.ProveedoresModelId);
+            return View(stockModel);
         }
 
-        // GET: Clientes/Delete/5
+        // GET: Stock/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -140,34 +135,36 @@ namespace Tarea5.Controllers
                 return NotFound();
             }
 
-            var clientesModel = await _context.Clientes
+            var stockModel = await _context.Stocks
+                .Include(s => s.ProductoModel)
+                .Include(s => s.ProveedoresModel)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (clientesModel == null)
+            if (stockModel == null)
             {
                 return NotFound();
             }
 
-            return View(clientesModel);
+            return View(stockModel);
         }
 
-        // POST: Clientes/Delete/5
+        // POST: Stock/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var clientesModel = await _context.Clientes.FindAsync(id);
-            if (clientesModel != null)
+            var stockModel = await _context.Stocks.FindAsync(id);
+            if (stockModel != null)
             {
-                _context.Clientes.Remove(clientesModel);
+                _context.Stocks.Remove(stockModel);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ClientesModelExists(int id)
+        private bool StockModelExists(int id)
         {
-            return _context.Clientes.Any(e => e.Id == id);
+            return _context.Stocks.Any(e => e.Id == id);
         }
     }
 }

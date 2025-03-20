@@ -27,19 +27,16 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Las filas de la factura se insertarán dinámicamente aquí -->
         </tbody>
     </table>
 
     <script>
         $(document).ready(function() {
-            // Hacemos una solicitud AJAX para obtener los datos
                    $.get("../../detallefactura/Tabla", function(listadetalle) {
     console.log("Datos recibidos:", listadetalle);  // Verifica que los datos sean correctos
 
     let htmlFactura = "";
 
-    // Recorremos cada elemento en la lista
     $.each(listadetalle, function(index, valor) {
         console.log(`Ítem ${index + 1}:`, valor);  // Verifica los valores antes de agregarlos a la tabla
 
@@ -59,31 +56,24 @@
         `;
     });
 
-    // Insertar las filas dinámicamente en el cuerpo de la tabla
     $("#tablafactura tbody").html(htmlFactura);
 }).fail(function() {
     console.error("Error al cargar los datos de la tabla de factura.");
 });
 
-            // Manejar clic en "Editar" Factura
             $(document).on('click', '.edit-factura', function() {
                 const facturaId = $(this).data('id');
                 console.log(`Editando factura con ID: ${facturaId}`);
-                // Aquí puedes abrir un formulario o hacer una solicitud AJAX para editar la factura
             });
 
-            // Manejar clic en "Detalles" Factura
             $(document).on('click', '.view-factura', function() {
                 const facturaId = $(this).data('id');
                 console.log(`Ver detalles de factura con ID: ${facturaId}`);
-                // Aquí puedes abrir una ventana modal con los detalles de la factura o hacer otra acción
             });
 
-            // Manejar clic en "Eliminar" Factura
             $(document).on('click', '.delete-factura', function() {
                 const facturaId = $(this).data('id');
                 console.log(`Eliminando factura con ID: ${facturaId}`);
-                // Aquí puedes enviar una solicitud AJAX para eliminar la factura
             });
         });
     </script>

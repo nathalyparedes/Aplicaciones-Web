@@ -436,9 +436,9 @@
 /Users/nathalyparedes/Tarea5/obj/Debug/net9.0/ref/Tarea5.dll
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea5/bin/Debug/net9.0/appsettings.Development.json
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea5/bin/Debug/net9.0/appsettings.json
-/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea5/bin/Debug/net9.0/app.db
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea5/bin/Debug/net9.0/Tarea5.staticwebassets.runtime.json
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea5/bin/Debug/net9.0/Tarea5.staticwebassets.endpoints.json
+/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea5/bin/Debug/net9.0/app.db
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea5/bin/Debug/net9.0/Tarea5
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea5/bin/Debug/net9.0/Tarea5.deps.json
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea5/bin/Debug/net9.0/Tarea5.runtimeconfig.json

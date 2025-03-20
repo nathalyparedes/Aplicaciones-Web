@@ -10,38 +10,22 @@ using Tarea5.Models;
 
 namespace Tarea5.Controllers
 {
-    public class ClientesController : Controller
+    public class ProveedoresController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public ClientesController(ApplicationDbContext context)
+        public ProveedoresController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Clientes
+        // GET: Proveedores
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Clientes.ToListAsync());
+            return View(await _context.Proveedores.ToListAsync());
         }
 
-        public JsonResult ListaClientes()
-        {
-            var clientes = _context.Clientes
-                                    .Select(p => new ClientesModel
-                                    {
-                                        Id = p.Id,
-                                        Nombre = p.Nombre,
-                                        Direccion = p.Direccion,
-                                        Telefono = p.Telefono,
-                                        Email = p.Email
-                                    })
-                                    .ToList();
-
-            return Json(clientes);
-        }
-
-        // GET: Clientes/Details/5
+        // GET: Proveedores/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -49,39 +33,39 @@ namespace Tarea5.Controllers
                 return NotFound();
             }
 
-            var clientesModel = await _context.Clientes
+            var proveedoresModel = await _context.Proveedores
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (clientesModel == null)
+            if (proveedoresModel == null)
             {
                 return NotFound();
             }
 
-            return View(clientesModel);
+            return View(proveedoresModel);
         }
 
-        // GET: Clientes/Create
+        // GET: Proveedores/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Clientes/Create
+        // POST: Proveedores/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nombre,Direccion,Telefono,Email")] ClientesModel clientesModel)
+        public async Task<IActionResult> Create([Bind("Id,NombreProveedor,Direccion,Telefono,Correo")] ProveedoresModel proveedoresModel)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(clientesModel);
+                _context.Add(proveedoresModel);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(clientesModel);
+            return View(proveedoresModel);
         }
 
-        // GET: Clientes/Edit/5
+        // GET: Proveedores/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -89,22 +73,22 @@ namespace Tarea5.Controllers
                 return NotFound();
             }
 
-            var clientesModel = await _context.Clientes.FindAsync(id);
-            if (clientesModel == null)
+            var proveedoresModel = await _context.Proveedores.FindAsync(id);
+            if (proveedoresModel == null)
             {
                 return NotFound();
             }
-            return View(clientesModel);
+            return View(proveedoresModel);
         }
 
-        // POST: Clientes/Edit/5
+        // POST: Proveedores/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Direccion,Telefono,Email")] ClientesModel clientesModel)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,NombreProveedor,Direccion,Telefono,Correo")] ProveedoresModel proveedoresModel)
         {
-            if (id != clientesModel.Id)
+            if (id != proveedoresModel.Id)
             {
                 return NotFound();
             }
@@ -113,12 +97,12 @@ namespace Tarea5.Controllers
             {
                 try
                 {
-                    _context.Update(clientesModel);
+                    _context.Update(proveedoresModel);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ClientesModelExists(clientesModel.Id))
+                    if (!ProveedoresModelExists(proveedoresModel.Id))
                     {
                         return NotFound();
                     }
@@ -129,10 +113,10 @@ namespace Tarea5.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(clientesModel);
+            return View(proveedoresModel);
         }
 
-        // GET: Clientes/Delete/5
+        // GET: Proveedores/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -140,34 +124,34 @@ namespace Tarea5.Controllers
                 return NotFound();
             }
 
-            var clientesModel = await _context.Clientes
+            var proveedoresModel = await _context.Proveedores
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (clientesModel == null)
+            if (proveedoresModel == null)
             {
                 return NotFound();
             }
 
-            return View(clientesModel);
+            return View(proveedoresModel);
         }
 
-        // POST: Clientes/Delete/5
+        // POST: Proveedores/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var clientesModel = await _context.Clientes.FindAsync(id);
-            if (clientesModel != null)
+            var proveedoresModel = await _context.Proveedores.FindAsync(id);
+            if (proveedoresModel != null)
             {
-                _context.Clientes.Remove(clientesModel);
+                _context.Proveedores.Remove(proveedoresModel);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ClientesModelExists(int id)
+        private bool ProveedoresModelExists(int id)
         {
-            return _context.Clientes.Any(e => e.Id == id);
+            return _context.Proveedores.Any(e => e.Id == id);
         }
     }
 }

@@ -14,14 +14,16 @@ namespace Tarea5.Models
         [Required(ErrorMessage = "El campo es requiro")]
         [MinLength(3, ErrorMessage = "El campo requiere mínimo 3 letras")]
         public string Direccion { get; set; }
+        
         [Display(Name = "Telefono")]
         [Required(ErrorMessage = "El campo es requiro")]
         [MinLength(3, ErrorMessage = "El campo requiere mínimo 3 letras")]
         public string Telefono { get; set; }
+        
         [Display(Name = "Correo Electrónico")]
-        [Required(ErrorMessage = "El campo es requiro")]
-        [DataType(DataType.EmailAddress)]
-        [EmailAddress(ErrorMessage ="No es un formato de correo electronico")]
+        [Required(ErrorMessage = "El campo es requerido")]
+        [EmailAddress(ErrorMessage = "No es un formato de correo electrónico válido")]
         public string Correo { get; set; }
+
     }
 }

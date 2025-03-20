@@ -1,53 +1,62 @@
 @model IEnumerable<Tarea5.Models.ClientesModel>
 
 @{
-    ViewData["Title"] = "Index";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<h1>Lista de Clientes</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nombre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Direccion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Telefono)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Direccion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Telefono)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+        
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+        <script>
+    $(document).ready(() => {
+        // Cargar la lista de clientes
+        $.get("../../Clientes/ListaClientes", (ListaClientes) => {
+            let html = "";
+            $.each(ListaClientes, (index, clientes) => { 
+                html += `
+                    <tr>
+                        <td>${index + 1}</td>
+                        <td>${clientes.nombre}</td>
+                        <td>${clientes.direccion}</td>
+                        <td>${clientes.telefono}</td>
+                        <td>${clientes.email}</td>
+
+                        <td>
+                            <a class="btn btn-outline-warning" href="/Clientes/Edit/${clientes.id}">Edit</a> |
+                            <a class="btn btn-outline-info" href="/Clientes/Details/${clientes.id}">Details</a> |
+                            <a class="btn btn-outline-danger" href="/Clientes/Delete/${clientes.id}">Delete</a>
+                        </td>
+                    </tr>
+                `;
+            });
+            // Insertar las filas de clientes en la tabla
+            $("#tablaClientes tbody").html(html);
+        }).fail(() => {
+            console.error("Error al cargar la lista de clientes.");
+        });
+    });
+</script>
+
+        <!-- Tabla de Clientes -->
+        <table class="table table-responsive table-bordered table-striped" id="tablaClientes">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Dirección</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        

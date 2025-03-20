@@ -10,38 +10,23 @@ using Tarea5.Models;
 
 namespace Tarea5.Controllers
 {
-    public class ClientesController : Controller
+    public class FacturaController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public ClientesController(ApplicationDbContext context)
+        public FacturaController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Clientes
+        // GET: Factura
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Clientes.ToListAsync());
+            var applicationDbContext = _context.Facturas.Include(f => f.ClientesModel);
+            return View(await applicationDbContext.ToListAsync());
         }
 
-        public JsonResult ListaClientes()
-        {
-            var clientes = _context.Clientes
-                                    .Select(p => new ClientesModel
-                                    {
-                                        Id = p.Id,
-                                        Nombre = p.Nombre,
-                                        Direccion = p.Direccion,
-                                        Telefono = p.Telefono,
-                                        Email = p.Email
-                                    })
-                                    .ToList();
-
-            return Json(clientes);
-        }
-
-        // GET: Clientes/Details/5
+        // GET: Factura/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -49,39 +34,42 @@ namespace Tarea5.Controllers
                 return NotFound();
             }
 
-            var clientesModel = await _context.Clientes
+            var facturaModel = await _context.Facturas
+                .Include(f => f.ClientesModel)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (clientesModel == null)
+            if (facturaModel == null)
             {
                 return NotFound();
             }
 
-            return View(clientesModel);
+            return View(facturaModel);
         }
 
-        // GET: Clientes/Create
+        // GET: Factura/Create
         public IActionResult Create()
         {
+            ViewData["ClientesModelId"] = new SelectList(_context.Clientes, "Id", "Id");
             return View();
         }
 
-        // POST: Clientes/Create
+        // POST: Factura/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nombre,Direccion,Telefono,Email")] ClientesModel clientesModel)
+        public async Task<IActionResult> Create([Bind("Id,FechaIngreso,NumeroFactura,ClientesModelId")] FacturaModel facturaModel)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(clientesModel);
+                _context.Add(facturaModel);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(clientesModel);
+            ViewData["ClientesModelId"] = new SelectList(_context.Clientes, "Id", "Id", facturaModel.ClientesModelId);
+            return View(facturaModel);
         }
 
-        // GET: Clientes/Edit/5
+        // GET: Factura/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -89,22 +77,23 @@ namespace Tarea5.Controllers
                 return NotFound();
             }
 
-            var clientesModel = await _context.Clientes.FindAsync(id);
-            if (clientesModel == null)
+            var facturaModel = await _context.Facturas.FindAsync(id);
+            if (facturaModel == null)
             {
                 return NotFound();
             }
-            return View(clientesModel);
+            ViewData["ClientesModelId"] = new SelectList(_context.Clientes, "Id", "Id", facturaModel.ClientesModelId);
+            return View(facturaModel);
         }
 
-        // POST: Clientes/Edit/5
+        // POST: Factura/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Direccion,Telefono,Email")] ClientesModel clientesModel)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,FechaIngreso,NumeroFactura,ClientesModelId")] FacturaModel facturaModel)
         {
-            if (id != clientesModel.Id)
+            if (id != facturaModel.Id)
             {
                 return NotFound();
             }
@@ -113,12 +102,12 @@ namespace Tarea5.Controllers
             {
                 try
                 {
-                    _context.Update(clientesModel);
+                    _context.Update(facturaModel);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ClientesModelExists(clientesModel.Id))
+                    if (!FacturaModelExists(facturaModel.Id))
                     {
                         return NotFound();
                     }
@@ -129,10 +118,11 @@ namespace Tarea5.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(clientesModel);
+            ViewData["ClientesModelId"] = new SelectList(_context.Clientes, "Id", "Id", facturaModel.ClientesModelId);
+            return View(facturaModel);
         }
 
-        // GET: Clientes/Delete/5
+        // GET: Factura/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -140,34 +130,35 @@ namespace Tarea5.Controllers
                 return NotFound();
             }
 
-            var clientesModel = await _context.Clientes
+            var facturaModel = await _context.Facturas
+                .Include(f => f.ClientesModel)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (clientesModel == null)
+            if (facturaModel == null)
             {
                 return NotFound();
             }
 
-            return View(clientesModel);
+            return View(facturaModel);
         }
 
-        // POST: Clientes/Delete/5
+        // POST: Factura/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var clientesModel = await _context.Clientes.FindAsync(id);
-            if (clientesModel != null)
+            var facturaModel = await _context.Facturas.FindAsync(id);
+            if (facturaModel != null)
             {
-                _context.Clientes.Remove(clientesModel);
+                _context.Facturas.Remove(facturaModel);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ClientesModelExists(int id)
+        private bool FacturaModelExists(int id)
         {
-            return _context.Clientes.Any(e => e.Id == id);
+            return _context.Facturas.Any(e => e.Id == id);
         }
     }
 }
