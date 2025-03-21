@@ -1,0 +1,53 @@
+@model IEnumerable<Tarea4.Models.Habitat>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreHabitat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoAgua)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TemperaturaPromedio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CapacidadLitros)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreHabitat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoAgua)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TemperaturaPromedio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CapacidadLitros)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Detalle</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

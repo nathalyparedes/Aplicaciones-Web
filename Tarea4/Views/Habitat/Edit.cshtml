@@ -1,0 +1,49 @@
+@model Tarea4.Models.Habitat
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Habitat</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="NombreHabitat" class="control-label"></label>
+                <input asp-for="NombreHabitat" class="form-control" />
+                <span asp-validation-for="NombreHabitat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TipoAgua" class="control-label"></label>
+                <input asp-for="TipoAgua" class="form-control" />
+                <span asp-validation-for="TipoAgua" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TemperaturaPromedio" class="control-label"></label>
+                <input asp-for="TemperaturaPromedio" class="form-control" />
+                <span asp-validation-for="TemperaturaPromedio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CapacidadLitros" class="control-label"></label>
+                <input asp-for="CapacidadLitros" class="form-control" />
+                <span asp-validation-for="CapacidadLitros" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

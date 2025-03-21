@@ -10,55 +10,20 @@ namespace Tarea4.Data
             : base(options)
         {
         }
+    public DbSet<Habitat> Habitats { get; set; }
+    public DbSet<Animal> Animales { get; set; }
+    public DbSet<Cuidador> Cuidadores { get; set; }
+    public DbSet<CuidadorHabitat> CuidadoresHabitats { get; set; }
+    public DbSet<Guia> Guias { get; set; }
+    public DbSet<Visita> Visitas { get; set; }
         
-        public DbSet<Pez> Peces { get; set; }
-        public DbSet<Habitacion> Habitaciones { get; set; }
-        public DbSet<PezHabitacion> PecesHabitaciones { get; set; }
-        public DbSet<Alimento> Alimentos { get; set; }
-        public DbSet<Alimentacion> Alimentaciones { get; set; }
-        
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
+   protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        // Configurar clave primaria compuesta para la tabla intermedia
+        modelBuilder.Entity<CuidadorHabitat>()
+            .HasKey(ch => new { ch.CuidadorId, ch.HabitatId });
 
-            modelBuilder.Entity<Microsoft.AspNetCore.Identity.IdentityUser>(entity =>
-            {
-                entity.Property(e => e.Id).HasMaxLength(450);
-            });
-            
-            modelBuilder.Entity<Microsoft.AspNetCore.Identity.IdentityRole>(entity =>
-            {
-                entity.Property(e => e.Id).HasMaxLength(450);
-            });
-            
-            // Configurar la clave primaria compuesta de PezHabitacion
-            modelBuilder.Entity<PezHabitacion>()
-                .HasKey(ph => new { ph.IdPez, ph.IdHabitacion });
-            
-            // Configurar las relaciones
-            modelBuilder.Entity<PezHabitacion>()
-                .HasOne(ph => ph.Pez)
-                .WithMany(p => p.PecesHabitaciones)
-                .HasForeignKey(ph => ph.IdPez)
-                .OnDelete(DeleteBehavior.Cascade);
-                
-            modelBuilder.Entity<PezHabitacion>()
-                .HasOne(ph => ph.Habitacion)
-                .WithMany(h => h.PecesHabitaciones)
-                .HasForeignKey(ph => ph.IdHabitacion)
-                .OnDelete(DeleteBehavior.Cascade);
-                
-            modelBuilder.Entity<Alimentacion>()
-                .HasOne(a => a.Pez)
-                .WithMany(p => p.Alimentaciones)
-                .HasForeignKey(a => a.IdPez)
-                .OnDelete(DeleteBehavior.Cascade);
-                
-            modelBuilder.Entity<Alimentacion>()
-                .HasOne(a => a.Alimento)
-                .WithMany(al => al.Alimentaciones)
-                .HasForeignKey(a => a.IdAlimento)
-                .OnDelete(DeleteBehavior.Cascade);
-        }
+        base.OnModelCreating(modelBuilder);
     }
+}
 }

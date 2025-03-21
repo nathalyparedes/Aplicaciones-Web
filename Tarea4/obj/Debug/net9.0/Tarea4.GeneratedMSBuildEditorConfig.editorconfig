@@ -32,64 +32,104 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Alimentacion/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWxpbWVudGFjaW9uL0NyZWF0ZS5jc2h0bWw=
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Animal/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQW5pbWFsL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Alimentacion/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWxpbWVudGFjaW9uL0RlbGV0ZS5jc2h0bWw=
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Animal/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQW5pbWFsL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Alimentacion/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWxpbWVudGFjaW9uL0RldGFpbHMuY3NodG1s
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Animal/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQW5pbWFsL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Alimentacion/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWxpbWVudGFjaW9uL0VkaXQuY3NodG1s
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Animal/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQW5pbWFsL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Alimentacion/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWxpbWVudGFjaW9uL0luZGV4LmNzaHRtbA==
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Animal/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQW5pbWFsL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Alimento/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWxpbWVudG8vQ3JlYXRlLmNzaHRtbA==
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Cuidador/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VpZGFkb3IvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Alimento/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWxpbWVudG8vRGVsZXRlLmNzaHRtbA==
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Cuidador/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VpZGFkb3IvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Alimento/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWxpbWVudG8vRGV0YWlscy5jc2h0bWw=
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Cuidador/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VpZGFkb3IvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Alimento/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWxpbWVudG8vRWRpdC5jc2h0bWw=
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Cuidador/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VpZGFkb3IvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Alimento/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWxpbWVudG8vSW5kZXguY3NodG1s
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Cuidador/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VpZGFkb3IvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Habitacion/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGFiaXRhY2lvbi9DcmVhdGUuY3NodG1s
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/CuidadorHabitat/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VpZGFkb3JIYWJpdGF0L0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Habitacion/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGFiaXRhY2lvbi9EZWxldGUuY3NodG1s
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/CuidadorHabitat/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VpZGFkb3JIYWJpdGF0L0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Habitacion/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGFiaXRhY2lvbi9EZXRhaWxzLmNzaHRtbA==
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/CuidadorHabitat/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VpZGFkb3JIYWJpdGF0L0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Habitacion/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGFiaXRhY2lvbi9FZGl0LmNzaHRtbA==
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/CuidadorHabitat/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VpZGFkb3JIYWJpdGF0L0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Habitacion/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGFiaXRhY2lvbi9JbmRleC5jc2h0bWw=
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/CuidadorHabitat/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VpZGFkb3JIYWJpdGF0L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Guia/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR3VpYS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Guia/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR3VpYS9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Guia/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR3VpYS9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Guia/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR3VpYS9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Guia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR3VpYS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Habitat/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGFiaXRhdC9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Habitat/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGFiaXRhdC9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Habitat/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGFiaXRhdC9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Habitat/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGFiaXRhdC9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Habitat/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGFiaXRhdC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Home/Index.cshtml]
@@ -98,46 +138,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Pez/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGV6L0NyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Pez/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGV6L0RlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Pez/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGV6L0RldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Pez/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGV6L0VkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Pez/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGV6L0luZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/PezHabitaciones/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGV6SGFiaXRhY2lvbmVzL0NyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/PezHabitaciones/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGV6SGFiaXRhY2lvbmVzL0RlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/PezHabitaciones/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGV6SGFiaXRhY2lvbmVzL0RldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/PezHabitaciones/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGV6SGFiaXRhY2lvbmVzL0VkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/PezHabitaciones/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGV6SGFiaXRhY2lvbmVzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Shared/Error.cshtml]
@@ -150,6 +150,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Visita/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlzaXRhL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Visita/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlzaXRhL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Visita/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlzaXRhL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Visita/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlzaXRhL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/Visita/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlzaXRhL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea4/Views/_ViewImports.cshtml]
