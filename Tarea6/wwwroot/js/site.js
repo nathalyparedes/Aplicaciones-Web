@@ -43,3 +43,4 @@ var cargarProdcutosLista = (id, precio, nombre) => {
     var cargarProdcutosLista = new DetalleFactura()
     cargarProdcutosLista.cargarProdcutosLista(id, precio, nombre);
 }
+

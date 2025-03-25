@@ -1231,7 +1231,6 @@
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea6/obj/Debug/net9.0/compressed/yfc7ypekbg-mlv21k5csn.gz
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea6/obj/Debug/net9.0/compressed/9zgcpm1imu-b9sayid5wm.gz
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea6/obj/Debug/net9.0/compressed/y2ri5v5s7c-61n19gt1b8.gz
-/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea6/obj/Debug/net9.0/compressed/4fnmb24tue-0f7irf2mw0.gz
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea6/obj/Debug/net9.0/compressed/n37cdyzgtt-bqjiyaj88i.gz
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea6/obj/Debug/net9.0/compressed/kfl4egb84d-c2jlpeoesf.gz
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea6/obj/Debug/net9.0/compressed/ogx7woiv5u-erw9l3u2r3.gz
@@ -1308,4 +1307,5 @@
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea6/obj/Debug/net9.0/Tarea5.pdb
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea6/obj/Debug/net9.0/Tarea5.genruntimeconfig.cache
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea6/obj/Debug/net9.0/ref/Tarea5.dll
-/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea6/obj/Debug/net9.0/compressed/j4q0wrwnvk-5bf9krt43k.gz
+/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea6/obj/Debug/net9.0/compressed/j4q0wrwnvk-6sxlj4yafp.gz
+/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/Tarea6/obj/Debug/net9.0/compressed/4fnmb24tue-3sf6enqlpt.gz
