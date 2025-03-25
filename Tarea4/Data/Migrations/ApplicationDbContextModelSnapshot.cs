@@ -234,11 +234,13 @@ namespace Tarea4.Data.Migrations
 
                     b.Property<string>("Dieta")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Especie")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<DateOnly>("FechaIngreso")
                         .HasColumnType("date");
@@ -248,7 +250,8 @@ namespace Tarea4.Data.Migrations
 
                     b.Property<string>("Nombre")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 
@@ -267,7 +270,8 @@ namespace Tarea4.Data.Migrations
 
                     b.Property<string>("Apellido")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -275,7 +279,8 @@ namespace Tarea4.Data.Migrations
 
                     b.Property<string>("Nombre")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Telefono")
                         .IsRequired()
@@ -292,6 +297,9 @@ namespace Tarea4.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("HabitatId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Id")
                         .HasColumnType("int");
 
                     b.HasKey("CuidadorId", "HabitatId");
@@ -311,7 +319,8 @@ namespace Tarea4.Data.Migrations
 
                     b.Property<string>("Apellido")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -322,7 +331,8 @@ namespace Tarea4.Data.Migrations
 
                     b.Property<string>("Nombre")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Telefono")
                         .IsRequired()
@@ -346,7 +356,8 @@ namespace Tarea4.Data.Migrations
 
                     b.Property<string>("NombreHabitat")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<decimal>("TemperaturaPromedio")
                         .HasColumnType("decimal(10,2)");

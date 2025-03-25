@@ -14,17 +14,17 @@
             @Html.DisplayNameFor(model => model.Cuidador)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Cuidador.Id)
+            @Html.DisplayFor(model => model.Cuidador.Apellido)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Habitat)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Habitat.Id)
+            @Html.DisplayFor(model => model.Habitat.NombreHabitat)
         </dd>
     </dl>
 </div>
 <div>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>

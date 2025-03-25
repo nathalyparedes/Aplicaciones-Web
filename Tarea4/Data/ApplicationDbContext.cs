@@ -17,13 +17,6 @@ namespace Tarea4.Data
     public DbSet<Guia> Guias { get; set; }
     public DbSet<Visita> Visitas { get; set; }
         
-   protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        // Configurar clave primaria compuesta para la tabla intermedia
-        modelBuilder.Entity<CuidadorHabitat>()
-            .HasKey(ch => new { ch.CuidadorId, ch.HabitatId });
-
-        base.OnModelCreating(modelBuilder);
-    }
+  
 }
 }

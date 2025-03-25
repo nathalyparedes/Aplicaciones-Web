@@ -1,0 +1,62 @@
+@model IEnumerable<Tarea5.Models.ClientesModel>
+
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Lista de Clientes</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+        
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+        <script>
+    $(document).ready(() => {
+        // Cargar la lista de clientes
+        $.get("../../Clientes/ListaClientes", (ListaClientes) => {
+            let html = "";
+            $.each(ListaClientes, (index, clientes) => { 
+                html += `
+                    <tr>
+                        <td>${index + 1}</td>
+                        <td>${clientes.nombre}</td>
+                        <td>${clientes.direccion}</td>
+                        <td>${clientes.telefono}</td>
+                        <td>${clientes.email}</td>
+
+                        <td>
+                            <a class="btn btn-outline-warning" href="/Clientes/Edit/${clientes.id}">Edit</a> |
+                            <a class="btn btn-outline-info" href="/Clientes/Details/${clientes.id}">Details</a> |
+                            <a class="btn btn-outline-danger" href="/Clientes/Delete/${clientes.id}">Delete</a>
+                        </td>
+                    </tr>
+                `;
+            });
+            // Insertar las filas de clientes en la tabla
+            $("#tablaClientes tbody").html(html);
+        }).fail(() => {
+            console.error("Error al cargar la lista de clientes.");
+        });
+    });
+</script>
+
+        <!-- Tabla de Clientes -->
+        <table class="table table-responsive table-bordered table-striped" id="tablaClientes">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Dirección</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        

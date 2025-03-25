@@ -6,6 +6,9 @@ namespace Tarea4.Models
 {
     public class CuidadorHabitat
     {
+
+         public int Id { get; set; }
+         
         [Required(ErrorMessage = "El identificador del cuidador es obligatorio.")]
         public int CuidadorId { get; set; }
 
