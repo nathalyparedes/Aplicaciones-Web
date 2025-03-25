@@ -5,11 +5,9 @@ class DetalleFactura {
     }
 
     inicializarFiltroProductos() {
-        // Escucha el evento 'input' en el campo de texto
         $("#buscadorProductos").on("input", function () {
-            var query = $(this).val().toLowerCase(); // Obtén el texto ingresado y conviértelo a minúsculas
+            var query = $(this).val().toLowerCase(); 
             $("#cuerpoproducto tr").filter(function () {
-                // Muestra u oculta las filas según si coinciden con el texto ingresado
                 $(this).toggle($(this).text().toLowerCase().indexOf(query) > -1);
             });
         });
