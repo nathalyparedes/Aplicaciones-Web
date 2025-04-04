@@ -10,10 +10,9 @@ namespace Tarea7.Data;
         : base(options)
     {
     }
-    public DbSet<ProveedoresModel> Proveedores { get; set; }
+        public DbSet<ProveedoresModel> Proveedores { get; set; }
         public DbSet<ProductoModel> Productos { get; set; }
         public DbSet<StockModel> Stocks { get; set; }
-
         public DbSet<ClientesModel> Clientes { get; set; }
         public DbSet<FacturaModel> Facturas { get; set; }
         public DbSet<DetalleFacturaModel> DetalleFactura { get; set; }
