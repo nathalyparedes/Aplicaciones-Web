@@ -242,6 +242,9 @@ namespace PruebaParcial2.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("Capacidad")
+                        .HasColumnType("int");
+
                     b.Property<string>("Direccion")
                         .IsRequired()
                         .HasMaxLength(200)

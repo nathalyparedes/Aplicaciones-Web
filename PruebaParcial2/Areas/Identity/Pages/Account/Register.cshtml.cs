@@ -24,6 +24,7 @@ using PruebaParcial2.Models;
 
 namespace PruebaParcial2.Areas.Identity.Pages.Account
 {
+    [Authorize(Roles = "Admin")]
     public class RegisterModel : PageModel
     {
         private readonly SignInManager<UsuariosModel> _signInManager;
