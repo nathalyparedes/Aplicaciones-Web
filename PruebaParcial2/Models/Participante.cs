@@ -10,12 +10,15 @@ namespace PruebaParcial2.Models
         [Key]
         public int Id { get; set; }
         
-        [Required]
-        [StringLength(100)]
+        [Required(ErrorMessage = "El nombre del participante es obligatorio.")]
+        [StringLength(100, ErrorMessage = "El nombre no puede exceder los 100 caracteres.")]
+        [RegularExpression(@"^[a-zA-Z\s]+$", ErrorMessage = "El nombre solo puede contener letras y espacios.")]
         public string Nombre { get; set; }
         
-        [Required]
-        [StringLength(50)]
+        [Required(ErrorMessage = "El contacto del participante es obligatorio.")]
+        [StringLength(10, ErrorMessage = "El contacto no puede exceder los 10 caracteres.")]
+        [RegularExpression(@"^[0-9+\-\s]+$", ErrorMessage = "El contacto solo puede contener números")]
         public string Contacto { get; set; }
+
     }
 }
