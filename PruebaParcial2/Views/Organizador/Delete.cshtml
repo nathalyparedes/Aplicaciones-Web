@@ -1,25 +1,23 @@
-@model PruebaParcial2.Models.Lugar
+@model PruebaParcial2.Models.Organizador
 
 @{
-    ViewData["Title"] = "Eliminar Lugar";
+    ViewData["Title"] = "Eliminar Organizador";
 }
 
-<h1 class="text-center text-danger">Eliminar Lugar</h1>
+<h1 class="text-center text-danger">Eliminar Organizador</h1>
 
-<h3 class="text-center">¿Estás seguro de que deseas eliminar este lugar?</h3>
+<h3 class="text-center">¿Estás seguro de que deseas eliminar este organizador?</h3>
 <div class="row justify-content-center">
     <div class="col-md-6">
         <div class="card shadow-sm">
             <div class="card-body">
-                <h4 class="text-muted">Detalles del Lugar</h4>
+                <h4 class="text-muted">Detalles del Organizador</h4>
                 <hr />
                 <dl class="row">
                     <dt class="col-sm-4">Nombre</dt>
                     <dd class="col-sm-8">@Html.DisplayFor(model => model.Nombre)</dd>
-                    <dt class="col-sm-4">Dirección</dt>
-                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Direccion)</dd>
-                    <dt class="col-sm-4">Capacidad</dt>
-                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Capacidad)</dd>
+                    <dt class="col-sm-4">Tipo de Organización</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.TipoOrganizacion)</dd>
                 </dl>
                 <form asp-action="Delete" class="mt-3">
                     <input type="hidden" asp-for="Id" />

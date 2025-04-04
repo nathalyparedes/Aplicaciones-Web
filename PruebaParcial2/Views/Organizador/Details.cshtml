@@ -1,24 +1,22 @@
-@model PruebaParcial2.Models.Lugar
+@model PruebaParcial2.Models.Organizador
 
 @{
-    ViewData["Title"] = "Detalles del Lugar";
+    ViewData["Title"] = "Detalles del Organizador";
 }
 
-<h1 class="text-center">Detalles del Lugar</h1>
+<h1 class="text-center">Detalles del Organizador</h1>
 
 <div class="row justify-content-center">
     <div class="col-md-6">
         <div class="card shadow-sm">
             <div class="card-body">
-                <h4 class="text-muted">Información del Lugar</h4>
+                <h4 class="text-muted">Información del Organizador</h4>
                 <hr />
                 <dl class="row">
                     <dt class="col-sm-4">Nombre</dt>
                     <dd class="col-sm-8">@Html.DisplayFor(model => model.Nombre)</dd>
-                    <dt class="col-sm-4">Dirección</dt>
-                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Direccion)</dd>
-                    <dt class="col-sm-4">Capacidad</dt>
-                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Capacidad)</dd>
+                    <dt class="col-sm-4">Tipo de Organización</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.TipoOrganizacion)</dd>
                 </dl>
                 <div class="d-flex justify-content-between mt-3">
                     <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning">Editar</a>

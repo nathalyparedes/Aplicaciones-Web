@@ -1,16 +1,16 @@
-@model PruebaParcial2.Models.Lugar
+@model PruebaParcial2.Models.Organizador
 
 @{
-    ViewData["Title"] = "Crear Lugar";
+    ViewData["Title"] = "Crear Organizador";
 }
 
-<h1 class="text-center">Crear Lugar</h1>
+<h1 class="text-center">Crear Organizador</h1>
 
 <div class="row justify-content-center">
     <div class="col-md-6">
         <div class="card shadow-sm">
             <div class="card-body">
-                <h4 class="text-muted">Complete los campos para agregar un nuevo lugar</h4>
+                <h4 class="text-muted">Complete los campos para agregar un nuevo organizador</h4>
                 <hr />
                 <form asp-action="Create">
                     <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
@@ -20,14 +20,9 @@
                         <span asp-validation-for="Nombre" class="text-danger"></span>
                     </div>
                     <div class="form-group mb-3">
-                        <label asp-for="Direccion" class="form-label"></label>
-                        <input asp-for="Direccion" class="form-control" />
-                        <span asp-validation-for="Direccion" class="text-danger"></span>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label asp-for="Capacidad" class="form-label"></label>
-                        <input asp-for="Capacidad" class="form-control" />
-                        <span asp-validation-for="Capacidad" class="text-danger"></span>
+                        <label asp-for="TipoOrganizacion" class="form-label"></label>
+                        <input asp-for="TipoOrganizacion" class="form-control" />
+                        <span asp-validation-for="TipoOrganizacion" class="text-danger"></span>
                     </div>
                     <div class="d-flex justify-content-between">
                         <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
