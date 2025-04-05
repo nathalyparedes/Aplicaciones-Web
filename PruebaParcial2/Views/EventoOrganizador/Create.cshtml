@@ -1,0 +1,42 @@
+@model PruebaParcial2.Models.EventoOrganizador
+
+@{
+    ViewData["Title"] = "Crear Evento y Organizador";
+}
+
+<h1 class="text-center">Crear Evento y Organizador</h1>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h4 class="text-muted">Complete los campos para agregar un nuevo registro</h4>
+                <hr />
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                    
+                    <div class="form-group mb-3">
+                        <label asp-for="EventoId" class="form-label"></label>
+                        <select asp-for="EventoId" class="form-select" asp-items="ViewBag.EventoId">
+                            <option value="">Seleccione un evento</option>
+                        </select>
+                        <span asp-validation-for="EventoId" class="text-danger"></span>
+                    </div>
+                    
+                    <div class="form-group mb-3">
+                        <label asp-for="OrganizadorId" class="form-label"></label>
+                        <select asp-for="OrganizadorId" class="form-select" asp-items="ViewBag.OrganizadorId">
+                            <option value="">Seleccione un organizador</option>
+                        </select>
+                        <span asp-validation-for="OrganizadorId" class="text-danger"></span>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between">
+                        <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
+                        <input type="submit" value="Crear" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

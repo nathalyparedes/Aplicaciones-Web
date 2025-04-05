@@ -11,9 +11,11 @@ namespace   PruebaParcial2.Models
     public int Id { get; set; }
     
     public int EventoId { get; set; }
-    public Evento Evento { get; set; }
+    public Evento? Evento { get; set; }
     
+    public DateTime FechaInscripcion { get; set; }
+
     public int ParticipanteId { get; set; }
-    public Participante Participante { get; set; }
+    public Participante? Participante { get; set; }
 }
 }

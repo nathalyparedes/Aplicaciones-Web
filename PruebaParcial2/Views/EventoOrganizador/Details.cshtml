@@ -1,0 +1,29 @@
+@model PruebaParcial2.Models.EventoOrganizador
+
+@{
+    ViewData["Title"] = "Detalles del Evento y Organizador";
+}
+
+<h1 class="text-center">Detalles del Evento y Organizador</h1>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h4 class="text-muted">Información del Registro</h4>
+                <hr />
+                <dl class="row">
+                    <dt class="col-sm-4">Evento</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Evento.Nombre)</dd>
+
+                    <dt class="col-sm-4">Organizador</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Organizador.Nombre)</dd>
+                </dl>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Editar</a>
+                <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
+            </div>
+        </div>
+    </div>
+</div>

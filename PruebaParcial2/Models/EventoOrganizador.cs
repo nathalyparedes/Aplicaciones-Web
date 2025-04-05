@@ -10,9 +10,9 @@ namespace PruebaParcial2.Models
         [Key]
         public int Id { get; set; }
         public int EventoId { get; set; }
-        public Evento Evento { get; set; }
+        public Evento? Evento { get; set; }
         
         public int OrganizadorId { get; set; }
-        public Organizador Organizador { get; set; }
+        public Organizador? Organizador { get; set; }
     }
 }

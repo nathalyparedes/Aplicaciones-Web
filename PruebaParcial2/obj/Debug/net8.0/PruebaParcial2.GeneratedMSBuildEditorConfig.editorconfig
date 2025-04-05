@@ -78,6 +78,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXZlbnRvL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/Views/EventoOrganizador/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXZlbnRvT3JnYW5pemFkb3IvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/Views/EventoOrganizador/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXZlbnRvT3JnYW5pemFkb3IvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/Views/EventoOrganizador/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXZlbnRvT3JnYW5pemFkb3IvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/Views/EventoOrganizador/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXZlbnRvT3JnYW5pemFkb3IvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/Views/EventoOrganizador/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXZlbnRvT3JnYW5pemFkb3IvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
