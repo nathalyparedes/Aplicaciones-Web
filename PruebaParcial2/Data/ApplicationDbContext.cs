@@ -15,4 +15,10 @@ namespace PruebaParcial2.Data;
     public DbSet<Lugar> Lugares { get; set; }
     public DbSet<EventoParticipante> EventoParticipantes { get; set; }
     public DbSet<EventoOrganizador> EventoOrganizadores { get; set; }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+{
+    optionsBuilder.EnableSensitiveDataLogging();
+}
+
 }

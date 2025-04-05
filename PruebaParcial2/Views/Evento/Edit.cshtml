@@ -1,0 +1,54 @@
+@model PruebaParcial2.Models.Evento
+
+@{
+    ViewData["Title"] = "Editar Evento";
+}
+
+<h1 class="text-center">Editar Evento</h1>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h4 class="text-muted">Actualice los campos para modificar el evento</h4>
+                <hr />
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                    
+                    <input type="hidden" asp-for="Id" />
+                    
+                    <div class="form-group mb-3">
+                        <label asp-for="Nombre" class="form-label"></label>
+                        <input asp-for="Nombre" class="form-control" placeholder="Ingrese el nombre del evento" />
+                        <span asp-validation-for="Nombre" class="text-danger"></span>
+                    </div>
+                    
+                    <div class="form-group mb-3">
+                        <label asp-for="Fecha" class="form-label"></label>
+                        <input asp-for="Fecha" class="form-control" type="date" />
+                        <span asp-validation-for="Fecha" class="text-danger"></span>
+                    </div>
+                    
+                    <div class="form-group mb-3">
+                        <label asp-for="Hora" class="form-label"></label>
+                        <input asp-for="Hora" class="form-control" type="time" />
+                        <span asp-validation-for="Hora" class="text-danger"></span>
+                    </div>
+                    
+                    <div class="form-group mb-3">
+                        <label asp-for="LugarId" class="form-label"></label>
+                        <select asp-for="LugarId" class="form-select" asp-items="ViewBag.LugarId">
+                            <option value="">Seleccione un lugar</option>
+                        </select>
+                        <span asp-validation-for="LugarId" class="text-danger"></span>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between">
+                        <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
+                        <input type="submit" value="Guardar Cambios" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

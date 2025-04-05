@@ -1,0 +1,39 @@
+@model PruebaParcial2.Models.Evento
+
+@{
+    ViewData["Title"] = "Eliminar Evento";
+}
+
+<h1 class="text-center text-danger">Eliminar Evento</h1>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h4 class="text-muted text-center">¿Estás seguro de que deseas eliminar este evento?</h4>
+                <p class="text-center text-danger">Esta acción no se puede deshacer.</p>
+                <hr />
+                <dl class="row">
+                    <dt class="col-sm-4">Nombre</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Nombre)</dd>
+
+                    <dt class="col-sm-4">Fecha</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Fecha)</dd>
+
+                    <dt class="col-sm-4">Hora</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Hora)</dd>
+
+                    <dt class="col-sm-4">Lugar</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Lugar.Direccion)</dd>
+                </dl>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+                <form asp-action="Delete" method="post">
+                    <input type="hidden" asp-for="Id" />
+                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                </form>
+                <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
+            </div>
+        </div>
+    </div>
+</div>
