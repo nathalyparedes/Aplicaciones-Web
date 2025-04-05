@@ -8,9 +8,6 @@
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/obj/Debug/net8.0/PruebaParcial2.RazorAssemblyInfo.cache
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/obj/Debug/net8.0/PruebaParcial2.RazorAssemblyInfo.cs
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/obj/Debug/net8.0/PruebaParcial2.sourcelink.json
-/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/obj/Debug/net8.0/PruebaParcial2.dll
-/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/obj/Debug/net8.0/refint/PruebaParcial2.dll
-/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/obj/Debug/net8.0/PruebaParcial2.pdb
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/bin/Debug/net8.0/appsettings.Development.json
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/bin/Debug/net8.0/appsettings.json
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/bin/Debug/net8.0/PruebaParcial2.staticwebassets.runtime.json
@@ -291,5 +288,8 @@
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/obj/Debug/net8.0/scopedcss/bundle/PruebaParcial2.styles.css
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/obj/Debug/net8.0/scopedcss/projectbundle/PruebaParcial2.bundle.scp.css
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/obj/Debug/net8.0/PruebaParcial2.csproj.CopyComplete
+/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/obj/Debug/net8.0/PruebaParcial2.dll
+/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/obj/Debug/net8.0/refint/PruebaParcial2.dll
+/Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/obj/Debug/net8.0/PruebaParcial2.pdb
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/obj/Debug/net8.0/PruebaParcial2.genruntimeconfig.cache
 /Applications/MAMP/htdocs/AplicacionesWeb/Aplicaciones-Web/PruebaParcial2/obj/Debug/net8.0/ref/PruebaParcial2.dll

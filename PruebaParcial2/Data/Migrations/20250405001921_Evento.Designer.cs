@@ -12,7 +12,7 @@ using PruebaParcial2.Data;
 namespace PruebaParcial2.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250405010657_Evento")]
+    [Migration("20250405001921_Evento")]
     partial class Evento
     {
         /// <inheritdoc />
